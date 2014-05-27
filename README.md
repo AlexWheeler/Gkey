@@ -1,0 +1,1 @@
+Shortcut to create keyboard shortcut to sign out of Gmail
