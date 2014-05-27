@@ -1,11 +1,11 @@
 var l = 76;
-var ctrl = 'event.ctrlKey'
+setSignOutHotKeys(l)
 
-setSignOutHotKeys(l,ctrl)
+//by default is CTRL + key
 
-function setSignOutHotKeys(key1, key2) {
+function setSignOutHotKeys(key) {
 	$( document ).keydown(function(event){
-		if (event.keyCode == key1 && key2) {
+		if (event.keyCode == key && event.ctrlKey) {
 		links = document.getElementsByTagName('a');
 		for (i=0; i < links.length; i++) {
 				if (links[i].innerHTML == "Sign out") {
@@ -15,4 +15,3 @@ function setSignOutHotKeys(key1, key2) {
 		}
 	});
 }		
-		

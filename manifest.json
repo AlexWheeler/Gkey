@@ -2,11 +2,7 @@
   "name": "Gkey",
   "short_name": "Gkey",
   "description": "Keyboard shortcut [CTRL + L] to quickly sign out of Gmail",
-  "version": "1.0.0",
-  "permissions": [
-    "activeTab"
-  ],
-
+  "version": "1.0.2",
     "content_scripts": [
     {
        "matches": ["https://*.google.com/*"],
