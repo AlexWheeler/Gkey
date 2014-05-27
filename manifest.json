@@ -1,7 +1,7 @@
 {
-  "name": "Gmail SignOut Hotkey",
-  "short_name": "Gmail Signout",
-  "description": "Keyboard shortcut to quickly sign out of Gmail",
+  "name": "Gkey",
+  "short_name": "Gkey",
+  "description": "Keyboard shortcut [CTRL + L] to quickly sign out of Gmail",
   "version": "1.0.0",
   "permissions": [
     "activeTab"
@@ -9,7 +9,7 @@
 
     "content_scripts": [
     {
-       "matches": [ "http://*/*", "https://*/*"],
+       "matches": ["https://*.google.com/*"],
       "js": ["jquery.js", "background.js"]
     }
   ],
