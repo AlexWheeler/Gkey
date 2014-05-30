@@ -1,5 +1,3 @@
-include('popup.js');
-
 var l = 76;
 setSignOutHotKeys(l)
 
