@@ -1,8 +1,9 @@
+include('popup.js');
+
 var l = 76;
 setSignOutHotKeys(l)
 
 //by default is CTRL + key
-
 function setSignOutHotKeys(key) {
 	$( document ).keydown(function(event){
 		if (event.keyCode == key && event.ctrlKey) {
